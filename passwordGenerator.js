@@ -1,53 +1,74 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
-var pw1 = ["A","B","C","D","E","F","G","H"];
-var pw2 = ["a","b","c","d","e","f","g","h"];
-  var pw3 = [1,2,3,4,5,6,7,8];
-  var pw4 = ["!","@","#","$","%","^","&","*"];
+var btn=document.getElementById("generate");
+btn.addEventListener("click",generatePassword);
 
-// Write password to the #password input
-function generatePassword () {
- 
-var selectpasswords = ""
-var answer = ""
+//Write password
+  function generatePassword() {
 
-var user = prompt ("length of password")
+var uppercase  = "ABCDEFGH";
+var lowercase = "abcdefgh";
+var number  = "12345678";
+var symbols = "!@#$%^&*";
+var plength;
+var pCharSet ="";
+var generatePassword = "";
+  //Write the prompt for the password
+  var pLength = prompt("How long you what your password. Must be between 8 and 128");
+  
+  // Give alert for lenght of password
+  if(pLength < 8){
+    alert( "please create a number between 8 and 128");
+    return;
 
-var pw3 = confirm("number?");
-var pw2 = confirm("lowercase letters");
-var pw1 = confirm("uppercase letters");
-var pw4 = confirm("symbols");
-
-if (user < 8||user > 128) {alert("invalid selection");
-return generatePassword();}
-
-if(pw1){selectpasswords= selectpasswords + pw1}
-
-if(pw2){selectpasswords= selectpasswords + pw2}
-
-if(pw4){selectpasswords= selectpasswords + pw4}
-
-if(pw3){selectpasswords= selectpasswords + pw3}
-
-if (pw2 === false && pw3 === false && pw1 === false && pw4 === false) {
-    alert ("retry");
-    return generatePassword();
   }
 
-  for(var count = 1; count <= userchoice; count++) {
-    var randomIndex = Math.floor(Math.random() * allSelectTypes.length);
-    result = result + selectpasswords.charAt(randomIndex)
+  if(plength > 128){
+    alert("Please create a number between 8 and 128");
+    return;
 
+  }
+
+  if(uppercase){
+    alert("ABECHFGH");
+  }
+  if(lowercase){
+    alert("abcdefgh")
+  }
+  if(number){
+    alert("12345678")
+  }
+  if(symbols){
+    alert("!@#$%^&*")
+  }
+  if(pCharSet){
+    alert("")
+  }
+  if(generatePassword){
+    alert("")
+  }
+  
+  //Write the prompt
+  if(pr)
 
   
-  var passwordText = document.querySelector("#password");
+  function findMax(arr) {
+    var maxNum = arr[0];
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i] > maxNum) {
+            maxNum = arr[i];
+        }
+    }
+    return maxNum;
+}
 
   
   
 
-  passwordText.value = password;
+  
+  
+  
+  
 
-}}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click",writePassword);
+// Add event listener to generate button 
+button.addEventListener("click"); 
+  }
