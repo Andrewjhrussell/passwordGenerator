@@ -5,7 +5,9 @@
 [Deployed site](https://andrewjhrussell.github.io/passwordGenerator/)
 ![image of working app](./assets/images/password.PNG)
 
-Repository Github link The Github Repo is at 
+Repository Github link The Github Repo is at https://github.com/Andrewjhrussell/passwordGenerator.git
+
+Website Url: https://andrewjhrussell.github.io/passwordGenerator/
 
 Title: Password Generator
 
